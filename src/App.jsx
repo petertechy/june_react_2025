@@ -21,11 +21,9 @@ const App = () => {
   return (
     <>
     <Navbar/>
-      <div className=''>
-        <h1>Good Morning</h1>
-      </div>
-      <div>
-        <h1>Good Afternoon</h1>
+      <div className='mx-auto d-flex '>
+        <h1 className='text-primary border'>Good Morning</h1>
+        <h1 className='text-danger border'>Good Afternoon</h1>
       </div>
       <Banner/>
     </>
