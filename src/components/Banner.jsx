@@ -1,11 +1,27 @@
-import React from 'react'
+import React from "react";
+import style from "./Banner.module.css"
 
 const Banner = () => {
-  return (
-    <div>
-        <h1>Study to become a global talent</h1>
-    </div>
-  )
-}
+  const myName = "Emmanuel";
+  const myStyle = {
+    backgroundColor: "black",
+    padding: "1rem",
+    textAlign: "center",
+    color: "white",
+    fontSize: "2.5rem"
+  };
 
-export default Banner
+  return (
+    <>
+      {/* <h1 style = {{backgroundColor: "black", padding:"1rem", textAlign: "center"}}>Study to become a global talent</h1> */}
+     <div className={style.container}>
+       <h1 style={myStyle}>Study to become a global talent</h1>
+      <h1>Hello {myName}</h1>
+     </div>
+    </>
+  );
+};
+
+export default Banner;
+
+//Interpolation - {}
