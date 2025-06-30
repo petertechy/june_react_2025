@@ -1,0 +1,22 @@
+.heading{
+    color: blue;
+    padding: 1rem;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    border: 1px solid green;
+}
+.card{
+    /* width: 250px;
+    height: 250px; */
+    border: 1px solid red;
+}
+.img{
+    width: 250px;
+    height: 250px;
+}
