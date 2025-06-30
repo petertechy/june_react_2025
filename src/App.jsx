@@ -16,6 +16,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Banner from './components/Banner'
+import Card from './components/Card'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <h1 className='text-danger border'>Good Afternoon</h1>
       </div>
       <Banner/>
+      <Card/>
     </>
   )
 }
