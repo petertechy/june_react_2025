@@ -45,3 +45,11 @@ export const cardItems = [
     img: Image2
   },
 ];
+
+export const cardUsers = [
+  {firstname: 'Adeoluwa', lastname: 'John'},
+  {firstname: 'Adeoluwa', lastname: 'John'},
+  {firstname: 'Adeoluwa', lastname: 'John'},
+  {firstname: 'Adeoluwa', lastname: 'John'},
+  {firstname: 'Adeoluwa', lastname: 'John'},
+]
