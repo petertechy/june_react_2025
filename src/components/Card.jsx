@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../components/Card.module.css";
-import { cardItems } from "../utils/CardData";
+import { cardItems, cardUsers  } from "../utils/CardData";
 
 const myName = "Emmanuel";
 
