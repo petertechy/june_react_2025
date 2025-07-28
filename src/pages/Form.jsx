@@ -5,6 +5,7 @@ import axios from "axios";
 
 const Form = () => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const endPoint = "http://localhost:3002/user";
 
   const formik = useFormik({
     initialValues: {
@@ -14,14 +15,14 @@ const Form = () => {
     },
     onSubmit: (value) => {
       console.log(value);
-      //   axios
-      //     .post("", value)
-      //     .then((res) => {
-      //       console.log(res);
-      //     })
-      //     .catch((err) => {
-      //       console.log(err);
-      //     });
+      axios
+        .post(endPoint, value)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     },
     // validate: (value) => {
     //   let errors = {};
