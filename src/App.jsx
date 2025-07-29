@@ -13,10 +13,22 @@ import Meat from "./pages/Meat";
 import { User } from "./pages/User";
 import Shoes from "./pages/Shoes";
 import Form from "./pages/Form";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increment, drecement, incrementByuser } from "./redux/Counter";
 
 const App = () => {
+  const dispatch = useDispatch();
+  const count = useSelector((state) => state.counterslice.value);
+  console.log(count);
   return (
     <>
+      <h1>{count}</h1>
+      <button onClick={() => dispatch(increment())}> Increment</button>
+      <button onClick={() => dispatch(drecement())}>decrement</button>
+      <button onClick={() => dispatch(incrementByuser(10))}>
+        incrementByuser
+      </button>
       <Navbar />
       <Routes>
         <Route path="/" element={<LandingPage />} />
